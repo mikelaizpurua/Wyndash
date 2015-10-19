@@ -1,24 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <title>Wyndash</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="smart landing page">
-  <meta name="author" content="stilearning">
-  <!-- styles -->
-  <link href="bootstrap.css" rel="stylesheet">
-  <link href="bootstrap-responsive.css" rel="stylesheet">
-  <link href="dashboard.css" rel="stylesheet">
+  <!-- Adding meta link to ensure proper rendering and touch zooming from mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+  <!-- Local CSS file -->
+  <link rel="stylesheet" href="application.css">
+
 </head>
 <body>
 
 <%= yield %>
 
-<!-- ================================================== -->
-<script src="jquery.js"></script>
-<script src="bootstrap.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </body>
 </html>

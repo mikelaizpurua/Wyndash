@@ -13,3 +13,8 @@
  *= require_tree .
  *= require_self
  */
+
+.testoverflow {
+  overflow-y: scroll;
+  height: 240px;
+}
