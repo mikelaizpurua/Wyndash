@@ -1,24 +1,29 @@
+
 <div class="container-fluid">
-  <div class="row">
-    <div class="col-md-3 testoverflow">
+
+
+
+    <section class="text-center jumbotron">
+
+    <div style="width:250px;" class="col-md-5">
+      <p>Latest Wyncode Instagram</p>
       <img class='img-thumbnail img-responsive center-block' src="<%= @instagram_feed[0]['images']['standard_resolution']['url'] %>" alt="Instagram Photo" />
       <img class='img-thumbnail img-responsive center-block' src="<%= @instagram_feed[1]['images']['standard_resolution']['url'] %>" alt="Instagram Photo" />
-      <img class='img-thumbnail img-responsive center-block' src="<%= @instagram_feed[2]['images']['standard_resolution']['url'] %>" alt="Instagram Photo" />
-      <img class='img-thumbnail img-responsive center-block' src="<%= @instagram_feed[3]['images']['standard_resolution']['url'] %>" alt="Instagram Photo" />
-      <img class='img-thumbnail img-responsive center-block' src="<%= @instagram_feed[4]['images']['standard_resolution']['url'] %>" alt="Instagram Photo" />
     </div>
-  </div>
-  <div class="row">
-    <div class="col-md-4 embed-responsive embed-responsive-16by9">
+
+    <div class="google text-center">
+    <p class="">Wyncode Events</p> 
       <iframe id="height"src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=200&amp;wkst=2&amp;bgcolor=%23FFFFFF&amp;src=ckth5nlin7k3enq99iqm34it34%40group.calendar.google.com&amp;color=%23AB8B00&amp;ctz=America%2FNew_York"></iframe>
-    </div>
-    <div class="col-md-3 embed-responsive embed-responsive-16by9">
+    <p>Wyncode Class</p>
       <iframe id="height" src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=150&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=ebeb817r11817qqjghdvp6r6is%40group.calendar.google.com&amp;color=%238C500B&amp;ctz=America%2FNew_York"></iframe>
     </div>
-  </div>
-  <div class="row">
-    <div class="col-md-4 embed-responsive embed-responsive-16by9">
-      <%= @twitter_feed %>
-    </div>
-  </div>
+      
+
+      <div class=" times" >
+        <h2><body onload="time1()"><span id="clk"></span></h2>
+      </div>
+
+      <h1>Good Afternoon</h1>
+      <p class="text-right">Power by: Wyndash </p>
+    </section>
 </div>

@@ -21,5 +21,25 @@
 
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script>
+    function time1()
+    {
+        var today=new Date();
+        var h=today.getHours();
+        var m=today.getMinutes();
+        // var s=today.getSeconds();
+        h = h % 12;
+        h= h ? h : 12; // the hour '0' should be '12'
+        var ampm=h >= 12 ? 'AM' : 'PM';
+        m = m < 10 ? '0'+m : m;
+        // s = s <10 ? '0'+s: s;
+    // add a zero in front of numbers<10
+
+        document.getElementById('clk').innerHTML=h+':'+m+' '+ampm;
+        t=setTimeout(function(){time1()},500);
+}
+</script>
 </body>
 </html>
+
+

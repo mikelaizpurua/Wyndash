@@ -14,11 +14,27 @@
  *= require_self
  */
 
-.testoverflow {
-  overflow-y: scroll;
-  height: 290px;
+
+
+.container-fluid {
+	background-color: tomato;
 }
 
-#height {
-  height: 150px;
+.google {
+	position: relative;
+
+}
+
+.times #clk {
+	color: #000;
+	font-size: 5em;
+}
+
+.jumbotron {
+	margin-bottom: 0;
+	background-color: red;
+}
+
+iframe {
+	border-radius: 5%;
 }
