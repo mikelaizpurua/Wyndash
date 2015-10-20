@@ -26,6 +26,14 @@
 	color:#FAFAFA;
 }
 
+#secondtitles {
+	font-size: 1.5em;
+	font-weight: bolder;
+	margin-bottom: 0;
+	margin-top: 10px;
+	color:#424242;
+}
+
 .container-fluid {
 	background-image: url('https://images.unsplash.com/photo-1432821596592-e2c18b78144f?q=80&fm=jpg&s=a4598570a3286ea23369fdefe46953ba');
 	background-size: cover;
