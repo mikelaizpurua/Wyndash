@@ -1,15 +1,13 @@
-
 <div class="container-fluid">
   <div class="row">
     <div class="col-md-3 testoverflow">
-      <% @counter = 1 %>
-      <% while @counter < 10 %>
-        <% @counter += 1 %>
-        <img class='img-thumbnail img-responsive center-block' src="<%= @url[@counter]['images']['standard_resolution']['url'] %>" alt="Instagram Photo" />
-      <% end %>
+      <img class='img-thumbnail img-responsive center-block' src="<%= @instagram_feed[0]['images']['standard_resolution']['url'] %>" alt="Instagram Photo" />
+      <img class='img-thumbnail img-responsive center-block' src="<%= @instagram_feed[1]['images']['standard_resolution']['url'] %>" alt="Instagram Photo" />
+      <img class='img-thumbnail img-responsive center-block' src="<%= @instagram_feed[2]['images']['standard_resolution']['url'] %>" alt="Instagram Photo" />
+      <img class='img-thumbnail img-responsive center-block' src="<%= @instagram_feed[3]['images']['standard_resolution']['url'] %>" alt="Instagram Photo" />
+      <img class='img-thumbnail img-responsive center-block' src="<%= @instagram_feed[4]['images']['standard_resolution']['url'] %>" alt="Instagram Photo" />
     </div>
   </div>
   <div class="row">
-      <div class="col-md-12"></div>
   </div>
 </div>
