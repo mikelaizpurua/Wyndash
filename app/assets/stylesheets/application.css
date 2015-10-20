@@ -18,3 +18,7 @@
   overflow-y: scroll;
   height: 290px;
 }
+
+#height {
+  height: 150px;
+}
