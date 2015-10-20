@@ -14,10 +14,27 @@
  *= require_self
  */
 
+* {
+	font-family: helvetica;
+}
 
+#titles {
+	font-size: 1.5em;
+	font-weight: bolder;
+	margin-bottom: 0;
+	margin-top: 10px;
+	color:#FAFAFA;
+}
 
 .container-fluid {
-	background-color: tomato;
+	background-image: url('https://images.unsplash.com/photo-1432821596592-e2c18b78144f?q=80&fm=jpg&s=a4598570a3286ea23369fdefe46953ba');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+#topmargins {
+	margin-top: 3em;
 }
 
 .google {
@@ -25,16 +42,34 @@
 
 }
 
-.times #clk {
-	color: #000;
+#clock {
+	color: #FAFAFA;
 	font-size: 5em;
-}
-
-.jumbotron {
-	margin-bottom: 0;
-	background-color: red;
 }
 
 iframe {
 	border-radius: 5%;
+}
+
+.powered {
+	font-style:italic;
+	color:white;
+}
+
+.salutation {
+	font-size: 7em;
+	font-weight: 900;
+	color:#424242;
+	margin-bottom: 10px;
+}
+
+#h2 {
+	text-align: center;
+}
+
+#h1 {
+	margin-top: 50%;
+	text-align: center;
+	font-size: 3em;
+
 }

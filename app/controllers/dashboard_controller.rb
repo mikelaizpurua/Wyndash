@@ -2,9 +2,6 @@ class DashboardController < ApplicationController
 
   def index
     @instagram_feed = HTTParty.get("https://api.instagram.com/v1/users/self/feed?access_token=2241851831.6eddba1.9af8868d838040f69feb686b9950997e")['data']
-    auth = {:username => "wyndashmia", :password => "123123wyndash"}
-    @twitter_feed = HTTParty.get("http://twitter.com/statuses/public_timeline.json",
-                         :basic_auth => auth)
   end
 end
 
@@ -21,3 +18,7 @@ end
 
 # Events Calendar ID
 # ckth5nlin7k3enq99iqm34it34@group.calendar.google.com
+
+# auth = {:username => "wyndashmia", :password => "123123wyndash"}
+# @twitter_feed = HTTParty.get("http://twitter.com/statuses/public_timeline.json",
+#                      :basic_auth => auth)
