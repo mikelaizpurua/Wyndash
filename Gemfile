@@ -1,7 +1,5 @@
 source 'https://rubygems.org'
 
-gem 'google-api-client'
-
 gem 'httparty'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
