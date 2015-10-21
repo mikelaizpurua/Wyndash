@@ -42,17 +42,12 @@
 }
 
 #topmargins {
-	margin-top: 3em;
-}
-
-.google {
-	position: relative;
-
+	margin-top: 2em;
 }
 
 #clock {
 	color: #FAFAFA;
-	font-size: 5em;
+	font-size: 4em;
 }
 
 iframe {
@@ -80,4 +75,10 @@ iframe {
 	text-align: center;
 	font-size: 3em;
 
+}
+
+.twitter {
+	height: 300px;
+	margin-bottom: 0;
+	/*overflow: hidden;*/
 }

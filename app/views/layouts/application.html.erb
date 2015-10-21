@@ -21,6 +21,10 @@
 
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+
 <script>
     function time1()
     {
@@ -39,5 +43,17 @@
         t=setTimeout(function(){time1()},500);
 }
 </script>
+
+<script>
+window.twttr = (function (d, s, id) {
+var t, js, fjs = d.getElementsByTagName(s)[0];
+if (d.getElementById(id)) return;
+js = d.createElement(s); js.id = id;
+js.src= "https://platform.twitter.com/widgets.js";
+fjs.parentNode.insertBefore(js, fjs);
+return window.twttr || (t = { _e: [], ready: function (f) { t._e.push(f) } });
+}(document, "script", "twitter-wjs"));
+</script>
+
 </body>
 </html>

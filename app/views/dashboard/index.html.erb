@@ -4,7 +4,7 @@
   <div class="row" id="topmargins">
     <div class="col-md-2">
       <p class="text-center" id="titles">What's up<br>at Wyncode?</p>
-      <img class='img-thumbnail img-responsive pull-left' src="<%= @instagram_feed[0]['images']['standard_resolution']['url'] %>" alt="Instagram Photo" />
+      <a href='https://instagram.com/wyncode/'><img class='img-thumbnail img-responsive pull-left' src="<%= @instagram_feed[0]['images']['standard_resolution']['url'] %>" alt="Instagram Photo" /></a>
       <img class='img-thumbnail img-responsive pull-left' src="<%= @instagram_feed[1]['images']['standard_resolution']['url'] %>" alt="Instagram Photo" />
       <img class='img-thumbnail img-responsive pull-left' src="<%= @instagram_feed[2]['images']['standard_resolution']['url'] %>" alt="Instagram Photo" />
     </div>
@@ -12,18 +12,30 @@
     <div class="col-md-6 col-centered testing">
       <h1 id="h1" class="text-center salutation">Good Afternoon</h1>
       <h2 id="h2"><body onload="time1()"><span id="clock" class="text-center"></span></h2>
+        <div class="text-center">
+        <a href="http://slack.com" target="_blank"><i class="fa fa-slack fa-4x"></i></a>&nbsp;&nbsp;
+        <a href="http://github.com" target="_blank"><i class="fa fa-github-square fa-4x"></i></a>&nbsp;&nbsp;
+        <a href="http://linkedin.com" target="_blank"><i class="fa fa-linkedin-square fa-4x"></i></a>
+        </div>
     </div>
     <div class="col-md-3 col-centered">
       <p class="pull-right" id="secondtitles">Events Coming Soon:</p>
       <iframe class="pull-right" id="height"src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=200&amp;wkst=2&amp;bgcolor=%23FFFFFF&amp;src=ckth5nlin7k3enq99iqm34it34%40group.calendar.google.com&amp;color=%23AB8B00&amp;ctz=America%2FNew_York"></iframe>
       <p class="pull-right" id="secondtitles">Class Schedule:</p>
       <iframe class="pull-right" id="height" src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=150&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=ebeb817r11817qqjghdvp6r6is%40group.calendar.google.com&amp;color=%238C500B&amp;ctz=America%2FNew_York"></iframe>
+      <p class="pull-right" id="secondtitles" style="color:#FAFAFA;">Hiring Partners' Tweets:</p>
+      <div class="twitter">
+        <% twitter_feed = @twitter_client.home_timeline(count:1) %>
+        <% twitter_feed.each do |tweet| %>
+        <%=raw(@twitter_client.oembed(tweet, hide_media:true).html) %>
+        <% end %>
+      </div>
     </div>
   </div>
 
   <div class="row row-centered">
-    <div class="col-md-12">
-      <p class="pull-right powered">Power by: Wyndash </p>
+    <div class="col-md-12 text-center">
+      <p class="powered">Power by: Wyndash</p>
     </div>
   </div>
 
